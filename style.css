@@ -141,6 +141,21 @@
     }
   }
 
+  @media only screen and (max-width: 600px){
+    body{
+      background-color: red;
+    }
+    #realtime{
+      display: none;
+    }
+    div.ex-2{
+      display: none;
+    }
+    div.ex{
+      font-size: 10px;
+    }
+  }
+
   #realtime{
     font-size: 40px;
   }
