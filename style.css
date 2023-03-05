@@ -106,14 +106,13 @@
 
   div.ex-2{
     display:flex;
-    width: -10px;
+    width: 100%;
     align-items: center;
   }
-
   .right{
     margin-left: auto;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .gallery::after {
@@ -136,7 +135,7 @@
     }
     div.ex-2{
       display:flex;
-      width: -10px;
+      width: 100%;
       align-items: center;
     }
   }
@@ -145,14 +144,18 @@
   and (max-device-width: 640px), 
   only screen and (max-device-width: 667px), 
   only screen and (max-width: 480px){
-      body{
-        background-color: red;
+    figure {
+      float:none !important;
+      display:block !important;
+      margin-left:auto !important;
+      margin-right:auto !important;
       }
       #realtime{
-        display: none;
+        display: contents;
+        font-size:large;
       }
       div.ex-2{
-        display: none;
+        font-size: 9px;
       }
       div.ex{
         font-size: 10px;
@@ -160,7 +163,7 @@
     }
 
   #realtime{
-    font-size: 40px;
+    font-size: 30px;
   }
 
   
